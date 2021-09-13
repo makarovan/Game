@@ -26,7 +26,7 @@ public class Game {
         System.out.print("Введите число от 0 до 10: ");
         
         //for (int i=0; i <3; i++){ //три попытки
-        while (true){
+        do{
             int number = number_scan.nextInt();
             if(number>10 || number<0){ // || это знак or; && это знак and
                 System.out.print("Ваше число меньше 0 или больше 10. Попытка засчитана. Введите число: ");
@@ -46,6 +46,6 @@ public class Game {
                 }
             }
             attempt++;
-        }
+        }while(true);
     }
 }
